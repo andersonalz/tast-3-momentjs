@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "f63a6906-0c89-45d6-a05d-8f0635575e8c",
+		"name": "uploud file",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18522805"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/u/createUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "      {\r\n      \"name\": \"mohhamad\",\r\n      \"lname\": \"eslamian\",\r\n      \"age\": \"20\"\r\n      }\r\n      ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/u/createUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"u",
+						"createUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/u/multiUpdate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "indorsement",
+							"value": "Certificate of non-addiction",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": [
+								"/C:/Users/Ehsan/Desktop/Screenshot 2022-02-27 132841.jpg",
+								"/C:/Users/Ehsan/Desktop/Screenshot 2022-03-06 185626.jpg"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/u/multiUpdate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"u",
+						"multiUpdate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/u/createTimeFile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Certificate of non-addiction\",\r\n    \"date\":\"Month\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/u/createTimeFile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"u",
+						"createTimeFile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
